@@ -6,15 +6,15 @@ import { AppComponent } from './app.component';
 import { AlbumComponent } from './album/album.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AlbumComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AlbumComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
