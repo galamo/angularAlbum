@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'this is HEADER!!!!';
+    public numberOfAlbums: number
+
+    constructor() {
+        this.numberOfAlbums = 0;
+    }
+
+    increaseAlbums() {
+        this.numberOfAlbums = this.numberOfAlbums + 1
+    }
 }
