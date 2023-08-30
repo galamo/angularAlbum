@@ -29,7 +29,12 @@
 
 <div style="margin-top: 100px;">
     <button (click)="increaseAlbums()"> Increase Number of albums </button>
-    <app-album></app-album>
+    <h1 *ngIf="true"> Albums</h1>
+    <button (click)="showOrHide()"> {{ showAlbums ? "Hide" :"Show"}} </button>
+    <div *ngIf="showAlbums">
+        {{ albumsStrings }}
+        <app-album></app-album>
+    </div>
 </div>
 
 
