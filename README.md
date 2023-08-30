@@ -38,3 +38,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Ex2 
 1. iterate each album pictures and show them
+
+# Ex3
+1. Create app-image component `ng g c image-url`
+2. present all the images with ngFor and @input inside each album

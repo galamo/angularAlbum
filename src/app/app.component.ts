@@ -27,9 +27,12 @@ export class AppComponent {
         this.numberOfAlbums = 0;
         this.albumMessage = Messages.NO_ALBUMS
         const data = [
-            { name: "Critim", description: "Tomer is traveling to Critim with her frineds from army" },
-            { name: "London", description: "Rafi having fun in London" },
-            { name: "Amsterdam", description: "Snir is enjoyint in Amsterdam, Yuval also joint" }]
+            {
+                name: "Critim", description: "Tomer is traveling to Critim with her frineds from army",
+                pictures: ["https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg", "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg", "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg"]
+            },
+            { name: "London", description: "Rafi having fun in London", pictures: ["https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg", "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg", "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg"] },
+            { name: "Amsterdam", description: "Snir is enjoyint in Amsterdam, Yuval also joint", pictures: ["https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg", "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg", "https://www.travelandleisure.com/thmb/1aFt6rEb0a9snnKSaoVVQ7Je2UY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/itinerary_05-5905cbf35f9b5810dca7a477.jpg"] }]
         this.albums = data;
         this.albumsStrings = JSON.stringify(data)
     }

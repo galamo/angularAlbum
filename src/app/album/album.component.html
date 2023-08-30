@@ -1,11 +1,15 @@
-<div class="album">
-    <h1> Album Name</h1>
-    <h2> IMAGE!!!! </h2>
-    <!-- more common -->
-    <button (click)="showImage = !showImage"> {{ showImage ? "Hide" :"Show"}} </button>
-    <div *ngIf="showImage">
-        <img height="400" width="400" [src]="imageURL" />
-    </div>
-    <!-- <img height="400" width="400" src="{{imageURL}}" /> -->
-
+<div class="album" >
+    <h1> {{item.name}}</h1>
+    <span> {{item.description}} </span>
+    <h2> see pictures ({{item?.pictures?.length}}) <button>⬇️</button></h2>
 </div>
+
+<!-- 
+<h1> Album Name</h1>
+<h2> IMAGE!!!! </h2>
+
+<button (click)="showImage = !showImage"> {{ showImage ? "Hide" :"Show"}} </button>
+<div *ngIf="showImage">
+    <img height="400" width="400" [src]="imageURL" />
+</div>
+<img height="400" width="400" src="{{imageURL}}" /> -->
