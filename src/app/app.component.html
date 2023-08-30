@@ -30,6 +30,10 @@
 <div style="margin-top: 100px;">
     <button (click)="increaseAlbums()"> Increase Number of albums </button>
     <h1 *ngIf="true"> Albums</h1>
+    <div *ngFor="let currentAlbum of albums">
+        <h1>{{currentAlbum.name}} </h1>
+        <span>{{currentAlbum.description}} </span>
+    </div>
     <button (click)="showOrHide()"> {{ showAlbums ? "Hide" :"Show"}} </button>
     <div *ngIf="showAlbums">
         {{ albumsStrings }}
