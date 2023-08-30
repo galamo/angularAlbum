@@ -30,3 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # HomeWork 
 - Watch angular course - JB
+
+
+# Ex1
+1. add image url to album, select a image form the internet
+2. add toggle button to show/hide the image
+
