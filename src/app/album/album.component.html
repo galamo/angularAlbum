@@ -1,7 +1,11 @@
-<div class="album" >
+<div class="album">
     <h1> {{item.name}}</h1>
     <span> {{item.description}} </span>
-    <h2> see pictures ({{item?.pictures?.length}}) <button>⬇️</button></h2>
+    <h2> see pictures ({{item?.pictures?.length}}) <button (click)="toggleImages()">⬇️</button></h2>
+    <div *ngIf="showImages">
+        <app-image-url *ngFor="let image of item?.pictures" [currentImage]="image"> </app-image-url>
+    </div>
+    <button (click)="order()">Order</button>
 </div>
 
 <!-- 

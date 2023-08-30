@@ -29,12 +29,13 @@
 
 <div style="margin-top: 100px;">
     <button (click)="increaseAlbums()"> Increase Number of albums </button>
+    <h2> Number of orders: {{numberOfOrders}}</h2>
     <h1 *ngIf="true"> Albums</h1>
     <div *ngFor="let currentAlbum  of albums" [ngStyle]='{"width":"500px"}'>
         <!-- <h1> {{currentAlbum.name}} </h1> -->
         <!-- <span>{{currentAlbum.description}} </span> -->
         <!-- <img height="200" width="200" *ngFor="let currentImage  of currentAlbum.pictures" [src]="currentImage" alt=""> -->
-        <app-album [item]="currentAlbum"></app-album>
+        <app-album [item]="currentAlbum" (orderEvent)="addOrder($event)"></app-album>
     </div>
 
     <button (click)="showOrHide()"> {{ showAlbums ? "Hide" :"Show"}} </button>

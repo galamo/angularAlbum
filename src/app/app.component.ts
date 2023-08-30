@@ -22,6 +22,7 @@ export class AppComponent {
     public albums: Array<Album> = []
     public albumsStrings: string
     public showAlbums: boolean = false;
+    public numberOfOrders: number = 0;
 
     constructor() {
         this.numberOfAlbums = 0;
@@ -43,7 +44,10 @@ export class AppComponent {
             this.albumMessage = Messages.YEA_WE_HAVE_ALBUMS
         }
     }
-
+    addOrder(item: any) {
+        console.log(item)
+        this.numberOfOrders++
+    }
     showOrHide() {
         this.showAlbums = !this.showAlbums
     }
