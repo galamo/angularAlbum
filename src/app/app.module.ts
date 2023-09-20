@@ -14,7 +14,8 @@ import { ImageUrlComponent } from './image-url/image-url.component';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -29,7 +29,7 @@
 
 <div style="margin-top: 100px;">
     <button (click)="increaseAlbums()"> Increase Number of albums </button>
-    <h2> Number of orders: {{numberOfOrders}}</h2>
+    <h2> Number of orders: {{orders.length}}</h2>
     <h1 *ngIf="true"> Albums</h1>
     <div *ngFor="let currentAlbum  of albums" [ngStyle]='{"width":"500px"}'>
         <app-album [item]="currentAlbum" (orderEvent)="addOrder($event)"></app-album>

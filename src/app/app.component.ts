@@ -23,10 +23,12 @@ export class AppComponent {
     public albumsStrings: string
     public showAlbums: boolean = false;
     public numberOfOrders: number = 0;
+    public orders: Array<any>;
 
     constructor() {
         this.numberOfAlbums = 0;
         this.albumMessage = Messages.NO_ALBUMS
+        this.orders = []
         const data = [
             {
                 name: "Critim", description: "Tomer is traveling to Critim with her frineds from army",
@@ -46,7 +48,7 @@ export class AppComponent {
     }
     addOrder(item: any) {
         console.log(item)
-        this.numberOfOrders++
+        this.orders.push(item)
     }
     showOrHide() {
         this.showAlbums = !this.showAlbums
